@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sandoval's Portfolio</title>
+  <link rel="stylesheet" href="../CSS/portfolio.css" />
+  <link rel="icon" href="../resources/essential-images/FavIcon.png" type="image/png">
+</head>
+<body>
+  <div class="page-container">
+    <section class="portfolio-section">
+      <h1 class="page-title">My Portfolio</h1>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="reset">Reset Filter</button>
+        <button class="filter-btn" data-filter="game">Game Designs</button>
+        <button class="filter-btn" data-filter="graphic">Graphic Designs</button>
+      </div>
+      
+      <div class="masonry">
+        <div class="masonry-item" data-category="game">
+          <img src="../resources/images/Ex1.png" alt="Game Design Example" class="masonry-img" />
+        </div>
+        <div class="masonry-item" data-category="graphic">
+          <img src="../resources/images/Ex2.jpg" alt="Graphic Design Example" class="masonry-img" />
+        </div>
+        <div class="masonry-item" data-category="graphic">
+          <img src="../resources/images/Ex3.png" alt="Graphic Design Video" class="masonry-img" />
+        </div>
+        <div class="masonry-item" data-category="graphic">
+          <img src="../resources/images/Ex4.png" alt="Graphic Design Video" class="masonry-img" />
+        </div>
+        <div class="masonry-item" data-category="graphic">
+          <img src="../resources/images/Ex3.png" alt="Graphic Design Video" class="masonry-img" />
+        </div>
+        <div class="masonry-item" data-category="graphic">
+          <img src="../resources/images/Ex2.jpg" alt="Graphic Design Video" class="masonry-img" />
+        </div>  
+      </div>
+      
+      <a href="../index.html" class="floating-home-btn">Home</a>
+    </section>
+    
+    <footer class="footer">
+      <a class="footer-item">0916-469-3981</a>
+      <a class="footer-item" href="mailto:sandoval.shunne24@gmail.com">sandoval.shunne24@gmail.com</a>
+      <a class="footer-item" href="../resources/Sandoval Resume.pdf" download>Download my Resume</a>
+    </footer>
+  </div>
+  
+  <div id="imgModal" class="modal">
+    <span id="closeModal" class="close">&times;</span>
+    <div class="modal-content">
+      <img id="modalImg" alt="Expanded Image" />
+    </div>
+  </div>
+
+  <script src="../JS/script.js"></script>
+</body>
+</html>
