@@ -1,7 +1,7 @@
 <h1 align="center">Personal Portfolio Site</h1>
-<h3 align="center">I like cheeseburgers and trains. Anyways here is the link: https://sporadicgithub.github.io/sandoval-portfolio/</h3>
+<h3 align="center">I like cheeseburgers and trains. Below is my Portfolio Website Link</h3>
 
-<h3 align="center">Connect with me:</h3>
+<h3 align="center">Connect with me: https://sporadicgithub.github.io/sandoval-portfolio</h3>
 <p align="center">
 </p>
 
