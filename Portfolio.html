@@ -14,12 +14,12 @@
         body {
             font-family: 'Inter', sans-serif;
             /* Deep dark purple background */
-            background-color: #211124            ; /* You can adjust this hex code */
+            background-color: #211124; /* You can adjust this hex code */
             /* Flashlight effect using radial gradient */
             background-image: radial-gradient(
                 circle farthest-corner at var(--mouse-x, 50%) var(--mouse-y, 50%),
                 #211124 0%, /* Subtle light center */
-                #211124  20%, /* Transition to dark purple */
+                #211124 20%, /* Transition to dark purple */
                 #160c18 40% /* Main background color */
             );
             background-repeat: no-repeat;
@@ -94,8 +94,9 @@
             @apply bg-purple-900/30 backdrop-blur-sm rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer;
         }
 
-        .portfolio-item img {
-            @apply w-full h-48 object-cover; /* Ensure images cover the area */
+        .portfolio-item img,
+        .portfolio-item video {
+            @apply w-full h-48 object-cover; /* Ensure images/videos cover the area */
         }
 
         .portfolio-item-content {
@@ -125,7 +126,7 @@
             <p class="text-xl md:text-2xl text-purple-300">3D Artist | Game Developer | Graphic Designer</p>
             <nav class="mt-8 space-x-6">
                 <a href="About.html" class="text-lg text-purple-300 hover:text-white transition duration-200">About</a>
-                <a href="mailto:sandoval.shunne@gmail.com" class="text-lg text-purple-300 hover:text-white transition duration-200"">Contact</a>
+                <a href="mailto:sandoval.shunne@gmail.com" class="text-lg text-purple-300 hover:text-white transition duration-200">Contact</a>
                 <a href="resources/Sandoval Resume.pdf" download class="text-lg text-purple-300 hover:text-white transition duration-200">Resume</a>
             </nav>
         </header>
@@ -136,7 +137,10 @@
             <div class="carousel-container">
                 <div class="carousel">
                     <div class="carousel-item portfolio-item">
-                        <img src="resources/videos/Wander.mp4" alt="2ND Year Game" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                        <video controls class="w-full h-48 object-cover">
+                            <source src="resources/videos/Wander.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="portfolio-item-content">
                             <h3 class="text-2xl font-semibold mb-3 text-purple-200">Wander</h3>
                             <p class="text-base text-purple-300 mb-2">Category: Game Development, 2D Asset</p>
@@ -145,7 +149,10 @@
                     </div>
 
                     <div class="carousel-item portfolio-item">
-                        <img src="resources/videos/Atmo.mp4" alt="Portfolio Item 2" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                        <video controls class="w-full h-48 object-cover">
+                            <source src="resources/videos/Atmo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="portfolio-item-content">
                             <h3 class="text-2xl font-semibold mb-3 text-purple-200">AtmoDefender</h3>
                             <p class="text-base text-purple-300 mb-2">Category: Game Development, 2D Asset</p>
@@ -154,7 +161,10 @@
                     </div>
 
                     <div class="carousel-item portfolio-item">
-                        <img src="resources/videos/Paagaw.mp4" alt="Portfolio Item 3" onerror="this.onerror=null; this.src='https://placehold.co/600x400/cccccc/333333?text=Image+Error';">
+                         <video controls class="w-full h-48 object-cover">
+                            <source src="resources/videos/Paagaw.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="portfolio-item-content">
                             <h3 class="text-2xl font-semibold mb-3 text-purple-200">Paagaw Challenge</h3>
                             <p class="text-base text-purple-300 mb-2">Category: Game Development, 3D Modelling</p>
@@ -190,7 +200,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="carousel-nav">
                 <button id="prevBtn" class="prev-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
@@ -203,7 +213,7 @@
                     </svg>
                 </button>
             </div>
-            
+
             <div class="flex justify-center mt-12">
                 <a href="index.html" class="inline-flex items-center bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-lg transition duration-300 shadow-md text-lg">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
@@ -276,12 +286,12 @@
             const itemWidth = items[0].offsetWidth + 32; // Width + gap
             const visibleItems = Math.floor(carousel.offsetWidth / itemWidth);
             const maxIndex = items.length - visibleItems;
-            
+
             if (currentIndex < 0) currentIndex = 0;
             if (currentIndex > maxIndex) currentIndex = maxIndex;
-            
+
             carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-            
+
             // Update button states
             prevBtn.disabled = currentIndex === 0;
             nextBtn.disabled = currentIndex === maxIndex;
@@ -310,7 +320,7 @@
         carousel.addEventListener('touchend', () => {
             const swipeThreshold = 50;
             const diff = touchStartX - touchEndX;
-            
+
             if (Math.abs(diff) > swipeThreshold) {
                 if (diff > 0) {
                     // Swipe left
