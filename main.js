@@ -19,13 +19,25 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileLinks.forEach(link => link.addEventListener('click', toggleNav));
 
     document.querySelectorAll('.grid-toggle-btn').forEach(btn => {
+        const gridId = btn.getAttribute('data-target');
+        const grid = document.getElementById(gridId);
+        const items = grid.querySelectorAll('article');
+
+        if (items.length <= 3) {
+            btn.parentElement.style.display = 'none';
+        } else {
+            items.forEach((item, index) => {
+                if (index >= 3) {
+                    item.classList.add('hidden', 'toggle-item');
+                }
+            });
+        }
+
         btn.addEventListener('click', () => {
-            const gridId = btn.getAttribute('data-target');
-            const textShow = btn.getAttribute('data-text-show');
-            const textHide = btn.getAttribute('data-text-hide');
-            const grid = document.getElementById(gridId);
             const hiddenItems = grid.querySelectorAll('.toggle-item');
             const isExpanded = grid.dataset.expanded === "true";
+            const textShow = btn.getAttribute('data-text-show');
+            const textHide = btn.getAttribute('data-text-hide');
 
             if (isExpanded) {
                 hiddenItems.forEach(item => item.classList.add('hidden'));
