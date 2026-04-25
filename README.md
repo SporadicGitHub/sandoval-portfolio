@@ -1,8 +1,9 @@
 # SHUNNE SANDOVAL | DIGITAL PORTFOLIO
 
 > Graphic Designer. UI/UX Designer. Level Designer.
+> PORTFOLIO ADDRESS: https://sporadicgithub.github.io/sandoval-portfolio/
 
-A high-precision, minimalist digital portfolio engineered to showcase multimedia design, interactive layouts, and game development projects. Built with static HTML, Vanilla JavaScript, and Tailwind CSS v4.
+A minimalist digital portfolio made to showcase multimedia design, interactive layouts, and game development projects. Built with static HTML, Vanilla JavaScript, and Tailwind CSS v4.
 
 ## ARCHITECTURE & DEPLOYMENT
 * **Frontend:** HTML5, Vanilla JavaScript.
@@ -20,13 +21,6 @@ A high-precision, minimalist digital portfolio engineered to showcase multimedia
 * **Paagaw:** Top-down multiplayer resource acquisition game with competitive physics mechanics.
 * **Wander:** 2D side-scrolling platformer featuring integrated art, design, and programming logic.
 * **AtmoDefender:** Arcade shooter operating on finite resource loops and collision algorithms.
-
-## LOCAL COMPILATION INSTRUCTIONS
-Execute the CSS compiler locally:
-1. Clone the repository.
-2. Install dependencies: `npm install tailwindcss @tailwindcss/cli`
-3. Initialize the watch process: `npx @tailwindcss/cli -i ./input.css -o ./output.css --watch`
-4. Generate production build: `npx @tailwindcss/cli -i ./input.css -o ./output.css --minify`
 
 ## CONTACT
 Caloocan, Metro Manila, Philippines
