@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shunne Sandoval | Student Portfolio</title>
+    <meta name="description" content="Portfolio of Shunne Sandoval, graphic Designer, UI/UX Designer, and Level Designer.">
+    <meta property="og:title" content="Shunne Sandoval | Student Portfolio">
+    <meta property="og:description" content="Portfolio of Shunne Sandoval, graphic Designer, UI/UX Designer, and Level Designer.">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774982646/FavIcon_ldnm3p.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="antialiased selection:bg-brand-accent selection:text-white">
+
+    <nav class="fixed w-full top-0 z-40 bg-brand-base/90 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 h-20 flex justify-between items-center">
+            <a href="#about" class="font-medium text-xl tracking-tight text-white focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm transition-colors">Shunne Sandoval</a>
+            
+            <div class="space-x-8 text-sm font-medium text-muted hidden md:flex items-center">
+                <a href="#about" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm">About Me</a>
+                <a href="#graphics" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm">Design</a>
+                <a href="#motion" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm">Motion</a>
+                <a href="#blog" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm">Blog</a>
+                <a href="#gallery" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm">Gallery</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sandoval.shunne24@gmail.com" target="_blank" rel="noopener noreferrer" class="text-white border border-white/20 px-4 py-2 rounded-full hover:bg-brand-accent hover:border-brand-accent transition-all focus:outline-none focus:ring-2 focus:ring-brand-accent">Get in Touch</a>
+            </div>
+
+            <button id="mobile-menu-trigger" class="md:hidden p-2 text-white focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm" aria-label="Toggle Navigation Menu" aria-expanded="false">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-surface border-b border-white/5 px-6 py-4 space-y-4">
+            <a href="#about" class="block text-white hover:text-brand-accent mobile-link">About Me</a>
+            <a href="#graphics" class="block text-white hover:text-brand-accent mobile-link">Design</a>
+            <a href="#motion" class="block text-white hover:text-brand-accent mobile-link">Motion</a>
+            <a href="#blog" class="block text-white hover:text-brand-accent mobile-link">Blog</a>
+            <a href="#gallery" class="block text-white hover:text-brand-accent mobile-link">Gallery</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sandoval.shunne24@gmail.com" target="_blank" rel="noopener noreferrer" class="block text-white hover:text-brand-accent">Get in Touch</a>
+        </div>
+    </nav>
+
+    <section id="about" class="bg-brand-base min-h-screen flex items-center pt-20 pb-24 px-6 md:px-12 lg:px-16">
+        <div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="relative group mx-auto w-full max-w-xs">
+                <div class="aspect-[3/4] w-full relative overflow-hidden rounded-2xl bg-brand-surface border border-white/5 shadow-2xl">
+                    <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1776421731/Sandoval_kaa3eu.jpg" 
+                         width="600" height="800"
+                         fetchpriority="high"
+                         onerror="this.src='https://placehold.co/600x800/160D1C/A59EAD?text=Photo+Missing'"
+                         class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105" 
+                         alt="Shunne Sandoval, UI/UX and Level Designer">
+                </div>
+                <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-brand-accent/20 rounded-full blur-3xl -z-10"></div>
+            </div>
+
+            <div class="flex flex-col justify-center items-start">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-8 leading-tight">
+                    Hi, I'm Shunne.
+                </h1>
+                <div class="space-y-6 text-muted text-lg leading-relaxed font-normal mb-8">
+                    <p><strong>Graphic Designer, UI/UX Designer, and Level Designer specializing in visual communication and interactive design.</strong> Proficient in Figma, Canva, and Autodesk Maya, with working knowledge of Adobe Photoshop. Capable of executing strict brand-aligned marketing collateral and conceptualizing original digital assets.</p>
+                </div>
+                
+                <a href="resources/Shunne Sandoval Resume.pdf" target="_blank" rel="noopener noreferrer" class="text-white border border-white/20 px-6 py-3 rounded-full hover:bg-brand-accent hover:border-brand-accent transition-all focus:outline-none focus:ring-2 focus:ring-brand-accent font-medium text-sm">Download Resume</a>
+
+                <div class="mt-10 flex flex-wrap gap-4" aria-label="Software Proficiencies">
+                    <span class="px-4 py-2 border border-white/10 rounded-full text-xs text-white bg-brand-surface">Unity</span>
+                    <span class="px-4 py-2 border border-white/10 rounded-full text-xs text-white bg-brand-surface">Figma</span>
+                    <span class="px-4 py-2 border border-white/10 rounded-full text-xs text-white bg-brand-surface">Autodesk Maya</span>
+                    <span class="px-4 py-2 border border-white/10 rounded-full text-xs text-white bg-brand-surface">Photoshop</span>
+                    <span class="px-4 py-2 border border-white/10 rounded-full text-xs text-white bg-brand-surface">Krita</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="graphics" class="bg-brand-surface px-6 md:px-12 lg:px-16 py-24 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-2xl font-normal text-white">Graphic Design</h2>
+                <p class="text-xs text-muted mt-1">Publication Materials, Logos, UI, & Assets</p>
+            </div>
+
+            <div id="graphics-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-expanded="false">
+                <article class="w-full flex flex-col gap-4">
+                    <div class="bg-brand-base relative aspect-[4/5] overflow-hidden rounded-xl border border-white/5 group">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774985506/1_fpgkix.png" width="600" height="750" loading="lazy" class="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500" alt="Paagaw Identity Logo Design">
+                        
+                        <div class="absolute inset-0 bg-brand-base/80 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm z-10">
+                            <button class="lightbox-trigger uppercase tracking-widest text-xs font-bold border border-white px-4 py-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-brand-accent" 
+                                    data-type="article"
+                                    data-images='["https://res.cloudinary.com/dxxcjvyti/image/upload/v1774985506/1_fpgkix.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1774985466/2_zjswwx.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1774985466/3_bmgw80.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1774985469/4_onsmgf.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1774985475/5_xwyp5s.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1774985471/6_pnqzna.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1774985467/7_gbt2nn.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1774985473/8_bb7rlb.png"]'
+                                    data-title="CARPS In-game Screenshots"
+                                    data-desc="Everything here was designed by me, from the logo, this image, to the in-game assets. I also did the UI layout and design for the game."
+                                    aria-label="View full images of CARPS In-game Screenshots">
+                                View Full
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg text-white font-medium">Cats and Rats Party Scramble | Itechtivity 2026</h3>
+                        <p class="text-sm text-muted">by Sub Zero Studio | University of Caloocan City</p>
+                    </div>
+                </article>
+
+                <article class="w-full flex flex-col gap-4">
+                    <div class="bg-brand-base relative aspect-[4/5] overflow-hidden rounded-xl border border-white/5 group">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774982649/Freelance-Designs_vsbc7o.png" width="600" height="750" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Game UI Layout Interface Design">
+                        
+                        <div class="absolute inset-0 bg-brand-base/80 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm z-10">
+                            <button class="lightbox-trigger uppercase tracking-widest text-xs font-bold border border-white px-4 py-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-brand-accent" 
+                                    data-type="img"
+                                    data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774982649/Freelance-Designs_vsbc7o.png"
+                                    data-title="Freelance Designs"
+                                    data-desc="Freelanced to me by a friend."
+                                    aria-label="View full image of Freelance Designs">
+                                View Full
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg text-white font-medium">Freelance Designs</h3>
+                        <p class="text-sm text-muted">Freelanced to me by a friend</p>
+                    </div>
+                </article>
+
+                <article class="w-full flex flex-col gap-4">
+                    <div class="bg-brand-base relative aspect-[4/5] overflow-hidden rounded-xl border border-white/5 group">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1777118290/BoTB_and_Idadait_dfujzs.png" width="600" height="750" loading="lazy" class="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500" alt="Paagaw Identity Logo Design">
+                        
+                        <div class="absolute inset-0 bg-brand-base/80 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm z-10">
+                            <button class="lightbox-trigger uppercase tracking-widest text-xs font-bold border border-white px-4 py-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-brand-accent" 
+                                    data-type="article"
+                                    data-images='["https://res.cloudinary.com/dxxcjvyti/image/upload/v1777119113/BoTB_Post_a87rrp.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1777119110/BoTB_Result_Post_xfkcs2.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1777119111/Pride_Month_Post_wbvry1.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1777119111/Idadait_Post_hihpyv.png"]'
+                                    data-title="Servicio Service Provider | Internship Projects"
+                                    data-desc='I helped create these posts thumbnails and the frames for each photos inside as well. If you wish to see more: <a href="https://www.facebook.com/Servcio.ServiceProvider" target="_blank">https://www.facebook.com/Servcio.ServiceProvider</a>'
+                                    aria-label="View full images of Servicio Service Provider | Internship Projects">
+                                View Full
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg text-white font-medium">Servicio Service Provider | Internship Graphic Projects</h3>
+                        <p class="text-sm text-muted">by Shunne Sandoval and The Marketing Team | Pasay City</p>
+                    </div>
+                </article>
+
+                <article class="w-full flex flex-col gap-4">
+                    <div class="bg-brand-base relative aspect-[4/5] overflow-hidden rounded-xl border border-white/5 group">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1777118032/Legacy_and_Highlights_gbj2nv.png" width="600" height="750" loading="lazy" class="absolute inset-0 w-full h-full object-contain p-8 group-hover:scale-105 transition-transform duration-500" alt="Paagaw Identity Logo Design">
+                        
+                        <div class="absolute inset-0 bg-brand-base/80 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm z-10">
+                            <button class="lightbox-trigger uppercase tracking-widest text-xs font-bold border border-white px-4 py-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-brand-accent" 
+                                    data-type="article"
+                                    data-images='["https://res.cloudinary.com/dxxcjvyti/image/upload/v1777119110/Legacy_on_Fire_dhaslm.png", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1777119111/Onslaught_ciacju.png"]'
+                                    data-title="Servicio Service Provider | Internship Projects"
+                                    data-desc='I helped create these posts, I edited the highlights video as well with my supervisors guidance. If you wish to see more: <a href="https://www.facebook.com/Servcio.ServiceProvider" target="_blank">https://www.facebook.com/Servcio.ServiceProvider</a>'
+                                    aria-label="View full images of Servicio Service Provider | Internship Projects">
+                                View Full
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg text-white font-medium">Servicio Service Provider | Internship Video Projects</h3>
+                        <p class="text-sm text-muted">by Shunne Sandoval and The Marketing Team | Pasay City</p>
+                    </div>
+                </article>
+
+                <article class="w-full flex flex-col gap-4">
+                    <div class="bg-brand-base relative aspect-[4/5] overflow-hidden rounded-xl border border-white/5 group">
+                        <video src="https://res.cloudinary.com/dxxcjvyti/video/upload/v1774982649/News_Bumper_catmo0.mp4" poster="https://res.cloudinary.com/dxxcjvyti/video/upload/v1774982649/News_Bumper_catmo0.jpg" width="600" height="750" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="News Bumpers Video">
+                            Your browser does not support the video tag.
+                        </video>
+
+                        <div class="absolute inset-0 bg-brand-base/80 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm z-10">
+                            <button class="lightbox-trigger uppercase tracking-widest text-xs font-bold border border-white px-4 py-2 rounded-full text-white focus:outline-none focus:ring-2 focus:ring-brand-accent" 
+                                    data-type="video"
+                                    data-src="https://res.cloudinary.com/dxxcjvyti/video/upload/v1774982649/News_Bumper_catmo0.mp4"
+                                    data-title="News Bumpers | Early Senior Year"
+                                    data-desc="A Freshman of BACOMM asked me for help in creating their segments. I designed the bumpers and edited the video together."
+                                    aria-label="View full video of News Bumpers">
+                                View Full
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-lg text-white font-medium">News Bumpers | Early Senior Year</h3>
+                        <p class="text-sm text-muted">A Freshman of BACOMM asked me for help in creating their segments.</p>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="mt-12 flex justify-center border-t border-white/5 pt-8">
+                <button class="grid-toggle-btn text-brand-accent hover:text-white transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm inline-flex items-center gap-2"
+                        data-target="graphics-grid"
+                        data-text-show="View all graphic designs"
+                        data-text-hide="Show less"
+                        aria-expanded="false">
+                    View all graphic designs <span class="indicator">↓</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="motion" class="bg-brand-surface px-6 md:px-12 lg:px-16 py-24 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-2xl font-normal text-white">Motion & Development</h2>
+                <p class="text-xs text-muted mt-1">Game Dev & Animation</p>
+            </div>
+
+            <div id="motion-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-expanded="false">
+                <article class="w-full flex flex-col gap-4">
+                    <div class="bg-brand-base relative aspect-video overflow-hidden rounded-xl border border-white/5 group">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774982646/PaagawChallengeImage_ag2p3v.png" width="600" height="338" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" alt="Paagaw 3D Animation Thumbnail">
+                        
+                        <button class="lightbox-trigger absolute inset-0 w-full h-full flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-brand-accent z-10" 
+                                data-type="youtube"
+                                data-src="GmTyGO0F7EU"
+                                data-title="Paagaw Trailer"
+                                data-desc="This game was about collecting finite resources on the map, candies & coins. You can push the other player around giving you a chance to steal what's theirs. The player with the most resources at the end of the match wins."
+                                aria-label="Play Paagaw Trailer Video">
+                            <div class="w-16 h-16 bg-brand-surface/80 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:bg-brand-accent group-hover:border-brand-accent transition-all text-white shadow-lg">▶</div>
+                        </button>
+                    </div>
+                    <div>
+                        <h3 class="text-lg text-white font-medium">Paagaw Trailer</h3>
+                        <p class="text-sm text-muted">A top-down multiplayer game we made during our Junior Year</p>
+                    </div>
+                </article>
+
+                <article class="w-full flex flex-col gap-4">
+                    <div class="bg-brand-base relative aspect-video overflow-hidden rounded-xl border border-white/5 group">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774982647/WanderImage_kofxsn.png" width="600" height="338" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" alt="Wander 2D Platformer Thumbnail">
+                        
+                        <button class="lightbox-trigger absolute inset-0 w-full h-full flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-brand-accent z-10" 
+                                data-type="youtube"
+                                data-src="zzQjVs8Zh0c"
+                                data-title="Wander Game Trailer"
+                                data-desc="A simple 2D side-scrolling platformer game I developed during our Junior Year. I handled all aspects of development including programming, art, and design. A little bit of horror at the end."
+                                aria-label="Play Wander Gameplay Video">
+                            <div class="w-16 h-16 bg-brand-surface/80 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:bg-brand-accent group-hover:border-brand-accent transition-all text-white shadow-lg">▶</div>
+                        </button>
+                    </div>
+                    <div>
+                        <h3 class="text-lg text-white font-medium">Wander Gameplay</h3>
+                        <p class="text-sm text-muted">A 2D side-scrolling platformer game I developed during our Junior Year</p>
+                    </div>
+                </article>
+
+                <article class="w-full flex flex-col gap-4">
+                    <div class="bg-brand-base relative aspect-video overflow-hidden rounded-xl border border-white/5 group">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774982646/AtmoDefenderImage_uvaqox.png" width="600" height="338" loading="lazy" class="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" alt="AtmoDefender Arcade Shooter Thumbnail">
+                        
+                        <button class="lightbox-trigger absolute inset-0 w-full h-full flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-brand-accent z-10" 
+                                data-type="youtube"
+                                data-src="MtLgwW_7XGA"
+                                data-title="AtmoDefender"
+                                data-desc="Simple arcade shooter game, you destroy the asteroids hurling down the Earth, while you let friendly rocket ships come home safely. Developed during our Freshman Year."
+                                aria-label="Play AtmoDefender Arcade Shooter Video">
+                                <div class="w-16 h-16 bg-brand-surface/80 backdrop-blur-md rounded-full flex items-center justify-center border border-white/20 group-hover:bg-brand-accent group-hover:border-brand-accent transition-all text-white shadow-lg">▶</div>
+                        </button>
+                    </div>
+                    <div>
+                        <h3 class="text-lg text-white font-medium">AtmoDefender</h3>
+                        <p class="text-sm text-muted">A simple arcade shooter game I developed during my Freshman Year</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="mt-12 flex justify-center border-t border-white/5 pt-8">
+                <button class="grid-toggle-btn text-brand-accent hover:text-white transition-colors text-sm font-medium focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm inline-flex items-center gap-2"
+                        data-target="motion-grid"
+                        data-text-show="View all motion projects"
+                        data-text-hide="Show less"
+                        aria-expanded="false">
+                    View all motion projects <span class="indicator">↓</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="bg-brand-base px-6 md:px-12 lg:px-16 py-24 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-2xl font-normal text-white">Blog</h2>
+                <p class="text-xs text-muted mt-1">Development Insights & Updates</p>
+            </div>
+            
+            <div id="blog-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-expanded="false">
+                <article class="w-full">
+                    <button class="lightbox-trigger block w-full text-left group focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl" 
+                            aria-label="Open Itechtivity 2026 post"
+                            data-type="article"
+                            data-images='["https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_12_k2chgm.jpg", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1774982648/Itechtivity-Game-Poster_luanpq.jpg", "https://res.cloudinary.com/dxxcjvyti/image/upload/v1774982648/Itechtivity-Booth_olmnrc.jpg"]'
+                            data-template="#blog-itechtivity">
+                      <div class="bg-brand-surface aspect-[4/3] rounded-xl overflow-hidden border border-white/5 mb-4 relative">
+                          <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774982647/Itechtivity-Dev-Team_tiq9sy.jpg" width="600" height="450" loading="lazy" class="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" alt="Itechtivity 2026 Thumbnail">
+                      </div>
+                      <time class="text-xs text-brand-accent font-medium tracking-widest uppercase block mb-2">March 26-27, 2026</time>
+                      <h3 class="text-xl text-white font-medium mb-3 group-hover:text-brand-accent transition-colors">Itechtivity 2026</h3>
+                      <p class="text-sm text-muted group-hover:text-white transition-colors">Read more →</p>
+                   </button>
+                   
+                   <template id="blog-itechtivity">
+                        <div class="text-left w-full mt-6">
+                            <h2 class="text-3xl md:text-4xl font-normal text-white mb-2">Cats And Rats Party Scramble</h2>
+                            <p class="text-brand-accent text-sm font-medium tracking-wide mb-8 uppercase">An Asymmetrical Multiplayer Block-Puzzle Mobile Game</p>
+
+                            <div class="bg-brand-surface border border-white/5 p-6 rounded-xl mb-8">
+                                <h3 class="text-sm font-bold text-white uppercase tracking-widest mb-4">Development Team</h3>
+                                <ul class="text-muted text-sm grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6">
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-accent"></div> (Leader, Center Right) Monte, Cristopen F.</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-accent"></div> (Co-Leader, Far Right) Sandoval, Shunne Gabriel M.</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-accent"></div> (Asset Designer, Left) Baguio, Ricmal U.</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-accent"></div> (Sound Designer, Right) Remitar, Jhon Michael D.</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-accent"></div> (Sound Designer, Far Left) Remitar, Kristina D.</li>
+                                    <li class="flex items-center gap-2"><div class="w-1.5 h-1.5 rounded-full bg-brand-accent"></div> (Capstone Advisor, Center Left) Villafuerte, Genalyn D.</li>
+                                </ul>
+                            </div>
+
+                            <div class="space-y-6 text-muted leading-relaxed font-normal text-[15px] md:text-base">
+                                <h3 class="text-xl text-white font-medium mt-10 mb-4 border-b border-white/10 pb-2">Abstract</h3>
+                                <p>This study focuses on the design, development, and quantitative descriptive evaluation of Cats and Rats Party Scramble, an asymmetrical multiplayer mobile block-puzzle game that assigns distinct scoring and sabotaging roles to players.</p>
+                                <p>Mobile block-puzzle games are widely popular but often lack interactive multiplayer features that promote engagement and strategic play. This study aimed to design and evaluate Cats and Rats Party Scramble, a mobile block-puzzle game that integrates asymmetrical multiplayer mechanics through drag-and-drop block management and sabotaging roles.</p>
+                                <p>Evaluation results showed high user acceptance, excellent functional suitability, strong resource utilization, and effective usability despite role complexity. Findings indicate that asymmetrical mechanics can be successfully implemented in casual puzzle games, enhancing social interaction, engagement, and software quality while maintaining stable mobile performance.</p>
+
+                                <h3 class="text-xl text-white font-medium mt-10 mb-4 border-b border-white/10 pb-2">Introduction & Background</h3>
+                                <p>Mobile block-puzzle games have remained popular due to their accessibility, simplicity, and suitability for short play sessions. Games such as Tetris and Block Blast exemplify symmetrical gameplay structures where all players share identical mechanics and objectives. While these designs are effective for casual engagement, they often limit social interaction and competitive diversity.</p>
+                                <p>In contrast, asymmetrical multiplayer design where players assume different roles, abilities, or goals has been shown to increase player autonomy and enjoyment. Cats and Rats Party Scramble integrates asymmetrical multiplayer mechanics into a block-puzzle context by assigning scoring roles to Cat players and sabotaging roles to Rat players within a shared 9x9 grid. This design reframes sabotage as an intentional and balanced mechanic rather than disruptive behavior.</p>
+                            </div>
+                        </div>
+                   </template>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="bg-brand-surface px-6 md:px-12 lg:px-16 py-24 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-2xl font-normal text-white">Gallery</h2>
+                <p class="text-xs text-muted mt-1">Moments & Memories</p>
+            </div>
+            
+            <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983210/Gallery_2_gu3c8r.jpg" data-title="Plain Old Me" data-desc="Photo taken during my Servicio Internship" aria-label="View gallery image 1">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983210/Gallery_2_gu3c8r.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 1" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983203/Gallery_1_d8yget.jpg" data-title="Team and Section Group Photo" data-desc="What the title says." aria-label="View gallery image 2">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983203/Gallery_1_d8yget.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 2" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983203/Gallery_9_tilkrr.jpg" data-title="Thesis Defense" data-desc="Photo taken after our Thesis Defense." aria-label="View gallery image 3">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983203/Gallery_9_tilkrr.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 3" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_10_vkvrp6.jpg" data-title="Exhibit Awarding at UCC" data-desc="Photo take by me, just for fun." aria-label="View gallery image 4">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_10_vkvrp6.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 4" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_8_jffdmc.jpg" data-title="Orange" data-desc="Orange, my old cat." aria-label="View gallery image 5">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_8_jffdmc.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 5" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_7_ouzosb.jpg" data-title="Sunflower" data-desc="A gift given to me, I love Sunflowers." aria-label="View gallery image 6">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_7_ouzosb.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 6" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_12_k2chgm.jpg" data-title="Sub Zero Studio Dev Team" data-desc="Group Photo" aria-label="View gallery image 7">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_12_k2chgm.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 7" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_5_treirs.jpg" data-title="Family Photo" data-desc="Taken at Krispy Kreme." aria-label="View gallery image 8">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983202/Gallery_5_treirs.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 8" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983201/Gallery_4_hnhym9.jpg" data-title="Family Photo 2" data-desc="Taken at.. somewhere, I forgot." aria-label="View gallery image 9">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983201/Gallery_4_hnhym9.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 9" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983201/Gallery_3_kyhnpf.jpg" data-title="Destroyer" data-desc="Yes, that's his name." aria-label="View gallery image 10">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983201/Gallery_3_kyhnpf.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 10" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983201/Gallery_11_s7rmdv.jpg" data-title="Me and the Bro" data-desc="Sun's hot." aria-label="View gallery image 11">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983201/Gallery_11_s7rmdv.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 11" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983200/Gallery_6_xcpo5e.jpg" data-title="On the way to Bataan" data-desc="Just a photo I took." aria-label="View gallery image 12">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983200/Gallery_6_xcpo5e.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 12" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983200/Gallery_13_zi4feh.jpg" data-title="Graduation Picture" data-desc="Why am I so chubby uwaaa." aria-label="View gallery image 13">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983200/Gallery_13_zi4feh.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 13" loading="lazy">
+                    </button>
+                </div>
+                <div class="break-inside-avoid">
+                    <button class="lightbox-trigger block w-full focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-xl group" data-type="img" data-src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983199/Gallery_14_nh4xio.jpg" data-title="Me and my Lil' Bro" data-desc="Eating at Elliot's." aria-label="View gallery image 14">
+                        <img src="https://res.cloudinary.com/dxxcjvyti/image/upload/v1774983199/Gallery_14_nh4xio.jpg" class="w-full h-auto rounded-xl border border-white/5 opacity-80 group-hover:opacity-100 transition-opacity" alt="Gallery image 14" loading="lazy">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-base py-20 px-6 md:px-12 lg:px-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-3xl font-normal text-white mb-4">Let's Connect</h2>
+            <p class="text-muted mb-10">I am open to internships, collaborative student projects, and freelance design opportunities.</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sandoval.shunne24@gmail.com" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-brand-base px-10 py-4 rounded-full font-medium hover:bg-brand-accent hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2 focus:ring-offset-brand-base">Send an Email</a>
+            <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center text-sm text-muted">
+                <p>© 2026 Shunne Gabriel M. Sandoval. All Rights Reserved.</p>
+                <div class="space-x-6 mt-4 md:mt-0 flex">
+                    <a href="resources/Shunne Sandoval Resume.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm">Download Resume</a>
+                    <a href="https://www.linkedin.com/in/shunne-sandoval-457321308/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="fixed inset-0 z-50 flex items-center justify-center bg-brand-base/95 hidden p-4 backdrop-blur-sm" role="dialog" aria-modal="true" aria-label="Media Lightbox">
+        <div class="absolute inset-0 cursor-pointer lightbox-overlay" aria-hidden="true"></div>
+        <button id="lightbox-close" class="absolute top-4 right-4 md:top-6 md:right-6 p-4 text-white/50 hover:text-white text-4xl font-light focus:outline-none focus:ring-2 focus:ring-brand-accent rounded-sm transition-colors z-[60]" aria-label="Close modal">×</button>
+        <div class="relative w-full md:w-[80%] lg:w-[60%] max-h-[90vh] flex flex-col items-center justify-start overflow-y-auto custom-scroll z-50 rounded-xl" id="lightbox-content"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
