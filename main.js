@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.style.overflow = isHidden ? 'hidden' : ''; 
     };
 
+        // Force scroll to top on page load
+    window.addEventListener('load', () => {
+        window.scrollTo(0, 0);
+    });
+
     mobileMenuBtn.addEventListener('click', toggleNav);
     mobileLinks.forEach(link => link.addEventListener('click', toggleNav));
 
