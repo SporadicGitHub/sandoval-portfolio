@@ -5,15 +5,17 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['DM Sans', 'sans-serif'],
+        display: ['Cormorant Garamond', 'serif'],
       },
       colors: {
         brand: {
-          base: '#0B0710',     
-          surface: '#160D1C',  
-          accent: '#8B5CF6'    
+          base:     '#080608',
+          surface:  '#100C14',
+          surface2: '#16101D',
+          accent:   '#C8922A',
         },
-        text: '#F8F7FA',      
-        muted: '#A59EAD',      
+        text:  '#F2EFE8',
+        muted: '#9A9290',
       }
     }
   },
