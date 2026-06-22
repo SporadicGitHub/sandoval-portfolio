@@ -58,10 +58,16 @@ html {
 /* Control Element Transformations */
 .lightbox-trigger {
     cursor: pointer;
+    /* Eliminates the 300ms tap delay and the iOS "first tap = hover, second tap = click" bug */
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
     transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.lightbox-trigger:hover {
-    transform: scale(1.015);
+/* Only apply hover scale on devices that actually support hover (not touchscreens) */
+@media (hover: hover) and (pointer: fine) {
+    .lightbox-trigger:hover {
+        transform: scale(1.015);
+    }
 }
 
 /* Scrollbar */

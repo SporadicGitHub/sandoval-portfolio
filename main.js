@@ -166,6 +166,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.querySelectorAll('.lightbox-trigger').forEach(btn => {
+        // Support keyboard activation for div-based triggers (role="button")
+        if (btn.tagName !== 'BUTTON' && btn.tagName !== 'A') {
+            btn.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    btn.click();
+                }
+            });
+        }
+
         btn.addEventListener('click', (e) => {
             const type = btn.getAttribute('data-type');
             const src = optimizeCloudinaryUrl(btn.getAttribute('data-src'));
@@ -176,14 +186,21 @@ document.addEventListener('DOMContentLoaded', () => {
             
             lastFocusedElement = btn;
             lightboxContent.innerHTML = ''; 
+
+            // Detect mobile viewport for responsive layout
+            const isMobile = window.innerWidth < 768;
             
             const mainLayout = document.createElement('div');
-            mainLayout.className = 'flex flex-row w-full h-full';
+            mainLayout.className = isMobile ? 'flex flex-col w-full h-full' : 'flex flex-row w-full h-full';
             mainLayout.tabIndex = -1;
 
-            // LEFT: fixed-width media pane — content sits centered, letterbox bars fill the rest
+            // MEDIA PANE — full width/partial height on mobile; left column on desktop
             const mediaPane = document.createElement('div');
-            mediaPane.style.cssText = 'flex: 0 0 calc(100% - 360px); width: calc(100% - 360px); height: 100%; position: relative; display: flex; align-items: center; justify-content: center; background: #080608; overflow: hidden;';
+            if (isMobile) {
+                mediaPane.style.cssText = 'flex: 0 0 52%; height: 52%; width: 100%; position: relative; display: flex; align-items: center; justify-content: center; background: #080608; overflow: hidden;';
+            } else {
+                mediaPane.style.cssText = 'flex: 0 0 calc(100% - 360px); width: calc(100% - 360px); height: 100%; position: relative; display: flex; align-items: center; justify-content: center; background: #080608; overflow: hidden;';
+            }
 
             // Close button — top-left corner of media pane
             const dynamicCloseBtn = document.createElement('button');
@@ -195,9 +212,13 @@ document.addEventListener('DOMContentLoaded', () => {
             dynamicCloseBtn.addEventListener('mouseleave', () => { dynamicCloseBtn.style.background = 'rgba(8,6,8,0.7)'; dynamicCloseBtn.style.color = 'white'; });
             mediaPane.appendChild(dynamicCloseBtn);
 
-            // RIGHT: fixed 360px info pane — header on top, body scrolls below
+            // INFO PANE — full width/remaining height on mobile; right column on desktop
             const infoPane = document.createElement('div');
-            infoPane.style.cssText = 'flex: 0 0 360px; width: 360px; height: 100%; display: flex; flex-direction: column; background: #100C14; border-left: 1px solid rgba(255,255,255,0.08); overflow: hidden;';
+            if (isMobile) {
+                infoPane.style.cssText = 'flex: 1 1 0; width: 100%; min-height: 0; display: flex; flex-direction: column; background: #100C14; border-top: 1px solid rgba(255,255,255,0.08); overflow: hidden;';
+            } else {
+                infoPane.style.cssText = 'flex: 0 0 360px; width: 360px; height: 100%; display: flex; flex-direction: column; background: #100C14; border-left: 1px solid rgba(255,255,255,0.08); overflow: hidden;';
+            }
 
             if (type === 'img') {
                 const img = document.createElement('img');
@@ -319,7 +340,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Info pane: fixed header block (title + desc), then scrollable body for long content
             const infoPaneHeader = document.createElement('div');
-            infoPaneHeader.style.cssText = 'flex-shrink: 0; padding: 20px 24px 16px; border-bottom: 1px solid rgba(255,255,255,0.07);';
+            infoPaneHeader.style.cssText = isMobile
+                ? 'flex-shrink: 0; padding: 12px 16px 10px; border-bottom: 1px solid rgba(255,255,255,0.07);'
+                : 'flex-shrink: 0; padding: 20px 24px 16px; border-bottom: 1px solid rgba(255,255,255,0.07);';
 
             if (title) {
                 const titleEl = document.createElement('h3');
@@ -338,7 +361,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Scrollable body — article template content goes here
             const infoPaneBody = document.createElement('div');
-            infoPaneBody.style.cssText = 'flex: 1; overflow-y: auto; padding: 20px 24px; scrollbar-width: thin; scrollbar-color: rgba(200,146,42,0.3) rgba(0,0,0,0.2);';
+            infoPaneBody.style.cssText = isMobile
+                ? 'flex: 1; overflow-y: auto; padding: 12px 16px; scrollbar-width: thin; scrollbar-color: rgba(200,146,42,0.3) rgba(0,0,0,0.2);'
+                : 'flex: 1; overflow-y: auto; padding: 20px 24px; scrollbar-width: thin; scrollbar-color: rgba(200,146,42,0.3) rgba(0,0,0,0.2);';
 
             if (type === 'article' && templateId) {
                 const tmpl = document.querySelector(templateId);
